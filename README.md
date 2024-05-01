@@ -1,2 +1,2 @@
-этот сайт сделан на простом html, css 
-Также вы можете загялнуть в gitp pages
+#Этот сайт сделан на простом **html, css** 
+Также вы можете загялнуть в [github pages] (https://akkunov.github.io/leslesVpn/)
