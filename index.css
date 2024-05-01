@@ -1,0 +1,52 @@
+@import url('./styles/_reset.css');
+
+
+:root{
+
+    /* colors */
+    --light: #FFFFFF;
+    --accent-color: #F53838;
+    --bage-color: #4F5665;
+    --light-bage-color: #FCFCFC;
+
+
+
+    /* font size typogarfy */
+    --font-s: 16px;
+    --font-x:  35px;
+    --font-xl: 50px;
+
+
+    /* borders boxes */
+
+    --radius-s: 10px;
+    --radius-x: 50px;
+    --container: 1440px
+
+    /* shadows */
+
+    --shadow-s: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;;
+}
+
+@font-face{
+    font-family: "Rubik ";
+    font-weight: 400;
+    src: url('./assets//font//RubikRegular.woff2') format('woff2');
+}
+@font-face{
+    font-family: "Rubik ";
+    font-weight: 500;
+    src: url('./assets//font//RubikMedium.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: "Rubik ";
+    font-weight: 700;
+    src: url('./assets//font//RubikBold.woff2') format('woff2');
+}
+
+
+
+body{
+    font-family: "Rubik",  sans-serif;
+}

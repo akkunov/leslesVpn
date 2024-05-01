@@ -1,0 +1,31 @@
+
+.button-without-border{
+    border: 0px;
+}
+
+
+.button-red-border{
+    width: 150px;
+    height: 45px;
+    border-radius: var(--radius-x);
+    border: 1px solid var(--accent-color);
+    opacity: 0px;
+}
+
+.button{
+    width: 250px;
+    height: 60px;
+    border-radius: var(--radius-s);
+    background-color: var(--accent-color);
+    border: none;
+    box-shadow: #F5383859 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    color: var(--light);
+    font-size: var(--font-s);
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+
+
+
+
+}
