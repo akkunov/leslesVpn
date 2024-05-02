@@ -17,7 +17,6 @@
 .feature__img{
     width: 508px;
     height: 414px;
-
 }
 .feature__content{
     display: flex;
@@ -51,4 +50,46 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
+}
+
+@media(max-width:1250px){
+    .features{
+        margin:60px 40px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+}
+
+@media(max-width:982px){
+    .features{
+        margin:60px 40px ;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .features__container{
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        align-items: center;
+
+        width: 80vw;
+        min-height:  414px;;
+        max-height: auto;
+    }
+    .feature__img{
+        
+        position: absolute;
+        z-index:2;
+        opacity: 0.6;
+        top: -50px;
+        right: 100px;
+    }
+    .feature__content{
+        position: absolute;
+        z-index: 3;
+    }
 }

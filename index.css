@@ -21,11 +21,23 @@
 
     --radius-s: 10px;
     --radius-x: 50px;
-    --container: 1440px
+    --container: 1440px;
 
     /* shadows */
 
     --shadow-s: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;;
+
+    max-width: 100vw;
+    overflow-x: hidden;
+
+}
+@media (max-width:1200px) {
+    :root{
+        --font-s: 16px;
+        --font-x:  35px;
+        --font-xl: 45px;
+    }
+    
 }
 
 @font-face{
@@ -50,3 +62,4 @@
 body{
     font-family: "Rubik",  sans-serif;
 }
+

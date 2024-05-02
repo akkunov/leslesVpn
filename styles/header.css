@@ -1,6 +1,5 @@
 .header{
     margin: 60px 150px;
-
 }
 .header__container{
     display: flex;
@@ -8,34 +7,49 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .logo{
+    width: 200px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     column-gap: 10px;
-
 }
+
 .logo__text{
     font-size: 20px;
     font-weight: 500;
-    line-height: 23.7px;
+    line-height: 23px;
+    text-align: center;
 }
+
 .bold{
     font-weight: 700;
 }
+.header--content{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav{
     display: flex;
     flex-direction: row;
-    column-gap: 40px;
+    align-items: center;
+    margin-left: 40px;
+    justify-content: space-between;
+    width: 400px;
 }
-.nav--text{
+
+.nav--text {
     font-size: var(--font-s);
     font-weight: 400;
-    color: var(--bage-color);
-    text-align: center;
+    line-height: 18.96px;
+    text-align: left;
     text-decoration: none;
+    color: var(--bage-color);
 }
+
 .header__buttons{
     display: flex;
     flex-direction: row;
@@ -44,30 +58,124 @@
 
 .header__button-signIn{
     font-size: var(--font-s);
-    font-weight: 700;
-    line-height: 19px;
+    font-weight: 500;
+    line-height: 18px;
     text-align: center;
     background-color: var(--light);
-    border-radius: var(--radius-x);
 }
-
 .header__button-signUp{
     font-size: var(--font-s);
     font-weight: 700;
-    line-height: 19px;
+    line-height: 18px;
     text-align: center;
-    color: #F53855;
     background-color: var(--light);
-    border-radius: var(--radius-x);
-}
-.transition{
-    transition: background-color;
-    transition-duration: 200ms;
+    color: var(--accent-color);
 }
 
-.header__button-signIn:active ,.header__button-signUp:active{
 
-    border-radius: var(--radius-x);
-    background-color: var(--bage-color);
+.burger{
+    display: none;
+   
+    width: 60px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    padding: 10px;
+}
+
+.burger span{
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--light);
+    will-change: transition;
+    transition: transform 300ms;
+}
+
+.burger.open span:nth-child(1){
+    transform: rotate(45deg);
+}
+.burger.open span:nth-child(2){
+    background-color: transparent;
+    display: none;
+}
+.burger.open span:nth-child(3){
+    transform: rotate(-45deg);
+}
+
+.burger span:nth-child(1){
+    transform: translateY(15px);
+}
+
+.burger span:nth-child(3){
+    transform: translateY(-15px);
+}
+
+
+@media (max-width: 1250px) {
+    .header{
+        margin: 60px 50px;
+    }
+}
+
+@media (max-width:982px) {
+    .header__container{
+        align-items: start;
+    }
+
+    .header--content{
+        background-color: var(--accent-color);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        place-items: start;
+        width: 300px;
+        padding: 20px;
+        border-radius: var(--radius-s);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        opacity: 0;
+        transition: transform 300ms, opacity 100ms;
+        transform: translateX(400px);
+    }
+    .header--content.open{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 40px;
+        row-gap: 20px;
+        width: fit-content;
+        padding-bottom: 20px;
+    }
+    .nav--text{
+        font-size: 20px;
+        font-weight: 700;
+        display: block;
+        color: var(--light);
+    } 
+    .header__buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
     
+    }
+    .header__button-signIn{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: center;
+        color: var(--light);
+        background-color: transparent;
+    }
+    .burger{
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 250px;
+    }
 }
