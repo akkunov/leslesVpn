@@ -4,4 +4,5 @@
 Также вы можете загялнуть в [github pages](https://akkunov.github.io/leslesVpn/)  
 
 
-**author** [Elpacho](akunov313131@gmail.com)
+**author** *Elpacho*   
+email: akunov313131@gmail.com
