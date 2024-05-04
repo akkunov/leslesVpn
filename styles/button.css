@@ -1,6 +1,10 @@
 
 .button-without-border{
     border: 0px;
+    width: 70px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
 }
 
 
@@ -9,6 +13,7 @@
     height: 45px;
     border-radius: var(--radius-x);
     border: 1px solid var(--accent-color);
+    background-color: transparent;
 }
 
 .button{
