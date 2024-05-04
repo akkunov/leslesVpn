@@ -75,14 +75,17 @@
 
 .burger{
     display: none;
-    width: 60px;
+
+}
+
+.burger.open{
+    width: 40px;
     height: 40px;
     background-color: transparent;
     border: none;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
 }
-
 .burger span{
     position: absolute;
     width: 40px;
@@ -208,8 +211,8 @@
     }
     
     .burger{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         left: 150px;
     }
     .burger span{
