@@ -27,8 +27,6 @@
 
     --shadow-s: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;;
 
-    max-width: 100vw;
-    overflow-x: hidden;
 
 }
 @media (max-width:1200px) {
@@ -39,6 +37,27 @@
     }
     
 }
+
+
+@media (max-width:650px) {
+    :root{
+        --font-s: 14px;
+        --font-x:  25px;
+        --font-xl: 35px;
+    }
+    
+}
+@media (max-width:480px) {
+    :root{
+        --font-s: 14px;
+        --font-x:  20px;
+        --font-xl: 30px;
+    }
+    
+}
+
+
+
 
 @font-face{
     font-family: "Rubik ";
@@ -61,5 +80,11 @@
 
 body{
     font-family: "Rubik",  sans-serif;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
 

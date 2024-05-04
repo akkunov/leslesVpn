@@ -6,13 +6,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+    z-index: -1;
 }
 
 .footer-container{
+    padding-top: 150px;
     display: grid;
-    padding-top: 200px;
     width: 1140px;
     grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-1{
@@ -76,7 +80,7 @@
     .footer{
         height: auto;
         width: 100%;
-        padding: 10px;
+        padding: 20px 0;
     }
     .footer-container{
         width: 90vw;

@@ -75,7 +75,6 @@
 
 .burger{
     display: none;
-   
     width: 60px;
     height: 40px;
     background-color: transparent;
@@ -177,5 +176,43 @@
         position: absolute;
         top: 20px;
         left: 250px;
+    }
+}
+
+@media (max-width:650px ) {
+    .header{
+        margin: 30px 10px;
+    }
+
+  
+    .burger{
+        top: 20px;
+        left: 200px;
+    }
+}
+
+@media (max-width:490px) {
+    .logo{
+        width: 120px;
+    }
+    .logo__text{
+        font-size: 16px;
+    }
+    .nav--text{
+        font-size: 14px;
+        font-weight: 500;
+    } 
+    .header--content{
+        width: 200px;
+        padding: 10px;
+    }
+    
+    .burger{
+        width: 30px;
+        height: 30px;
+        left: 150px;
+    }
+    .burger span{
+        width: 30px;
     }
 }
