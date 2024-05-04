@@ -16,7 +16,6 @@
     width: 1140px;
     grid-template-columns: repeat(7, 1fr);
     justify-content: center;
-    align-items: center;
 }
 
 .grid-1{

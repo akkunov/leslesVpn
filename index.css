@@ -85,6 +85,10 @@ body{
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    &::selection{
+        background-color: chocolate;
+    }
+    
 }
 
 

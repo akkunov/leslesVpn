@@ -23,4 +23,7 @@
     font-weight: 700;
     line-height: 25px;
     text-align: center;
+    &::selection{
+        background-color: chocolate;
+    }
 }
