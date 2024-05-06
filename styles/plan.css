@@ -41,6 +41,10 @@
     align-items: center;
     box-sizing: border-box;
     padding: 40px 0;
+    transition: border 300ms ease-in;
+    &:hover{
+        border: 2px solid var(--accent-color);
+    }
 }
 .card__elem__name {
     margin-top: 40px;

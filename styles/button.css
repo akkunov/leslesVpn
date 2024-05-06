@@ -14,6 +14,11 @@
     border-radius: var(--radius-x);
     border: 1px solid var(--accent-color);
     background-color: transparent;
+    transition: all 0.2s ease-in;
+    &:hover{
+        background-color: var(--accent-color);
+        color: var(--light);
+    }
 }
 
 .button{
@@ -22,12 +27,16 @@
     border-radius: var(--radius-s);
     background-color: var(--accent-color);
     border: none;
-    box-shadow: #F5383859 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    
     color: var(--light);
     font-size: var(--font-s);
     font-weight: 700;
     line-height: 25px;
     text-align: center;
+    transition: box-shadow .2s ease-in;
+    &:hover{
+        box-shadow: #F5383859 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
     &::selection{
         background-color: chocolate;
     }

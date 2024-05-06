@@ -73,11 +73,15 @@
     background-color: green;
     background-color: var(--light);
     border-radius: var(--radius-s);
-    border: 2px var(--accent-color) solid;
+    border: 2px var(--light) solid;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     row-gap: 14px;
+    transition: border 200ms ease;
+    &:hover{
+        border: 2px var(--accent-color) solid;
+    }
 }
 .customer__card--header {
     display: flex;
